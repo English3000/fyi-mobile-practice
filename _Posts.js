@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import Nav from './_Nav';
 
 export default class Posts extends React.Component {
   render() {

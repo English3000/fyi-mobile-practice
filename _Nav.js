@@ -12,8 +12,9 @@ export default class Nav extends React.Component {
   }
 
   render() {
+    const {navigate} = this.props.screenProps.navigation;
     return this.state.fontLoaded ? (<View style={styles.nav}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigate('Posts')}>
         <FontAwesome style={{fontSize: 30, color: 'lightgreen'}}>{Icons.home}</FontAwesome>
       </TouchableOpacity>
       <View style={{flexDirection: 'row'}}>
